@@ -45,13 +45,13 @@ $(document).ready(function(){
       q7: 'nickelback'
     },
     pictures: {
-      q1: '<img src="https://cdn1.thr.com/sites/default/files/imagecache/portrait_300x450/2011/06/nicolas_cage_2011_a_p.jpg" />',
-      q2: '<img src="https://images-na.ssl-images-amazon.com/images/I/71gI-IUNUkL._SY355_.jpg" />',
+      q1: '<img src="https://cdn1.thr.com/sites/default/files/imagecache/portrait_300x450/2011/06/nicolas_cage_2011_a_p.jpg" height="300" width="210" />',
+      q2: '<img src="https://images-na.ssl-images-amazon.com/images/I/71gI-IUNUkL._SY355_.jpg" height="200" width="200" />',
       q3: '<img src=""/>',
       q4: '<img src=""/>',
-      q5: '<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg"/>',
-      q6: '<img src="https://assets.saatchiart.com/saatchi/185894/art/3678383/2748268-AQXFCLTV-7.jpg"/>',
-      q7: '<img src="https://cps-static.rovicorp.com/3/JPG_400/MI0003/458/MI0003458556.jpg?partner=allrovi.com"/>'
+      q5: '<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg" height="200" width="300"/>',
+      q6: '<img src="https://assets.saatchiart.com/saatchi/185894/art/3678383/2748268-AQXFCLTV-7.jpg"height="200" width="150"/>',
+      q7: '<img src="https://cps-static.rovicorp.com/3/JPG_400/MI0003/458/MI0003458556.jpg?partner=allrovi.com"height="200" width="250"/>'
     },
     // trivia methods
     // method to initialize game
