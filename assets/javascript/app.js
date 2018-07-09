@@ -45,7 +45,7 @@ $(document).ready(function(){
       q7: 'nickelback'
     },
     pictures: {
-      q1: '<img src="https://cdn1.thr.com/sites/default/files/imagecache/portrait_300x450/2011/06/nicolas_cage_2011_a_p.jpg" height="300" width="210" />',
+      q1: '<img src="https://cdn1.thr.com/sites/default/files/imagecache/portrait_300x450/2011/06/nicolas_cage_2011_a_p.jpg" height="280" width="200" />',
       q2: '<img src="https://images-na.ssl-images-amazon.com/images/I/71gI-IUNUkL._SY355_.jpg" height="200" width="200" />',
       q3: '<img src=""/>',
       q4: '<img src=""/>',
@@ -91,7 +91,7 @@ $(document).ready(function(){
       
       // to prevent timer speed up
       if(!trivia.timerOn){
-        trivia.timerId = setInterval(trivia.timerRunning, 1000);
+        trivia.timerId = setInterval(trivia.timerRunning, 1200);
       }
       
       // gets all the questions then indexes the current questions
@@ -122,7 +122,7 @@ $(document).ready(function(){
         trivia.unanswered++;
         trivia.result = false;
         clearInterval(trivia.timerId);
-        resultId = setTimeout(trivia.guessResult, 1000);
+        resultId = setTimeout(trivia.guessResult, 1200);
         $('#results').html('<h3>Out of time! The answer is '+ Object.values(trivia.answers)[trivia.currentSet] +'</h3>');
       }
       // if all the questions have been shown end the game, show results
@@ -162,7 +162,7 @@ $(document).ready(function(){
         
         trivia.correct++;
         clearInterval(trivia.timerId);
-        resultId = setTimeout(trivia.guessResult, 1000);
+        resultId = setTimeout(trivia.guessResult, 1200);
         $('#results').html('<h3>Good.</h3>');
       }
       // else the user picked the wrong option, increment incorrect
@@ -173,7 +173,7 @@ $(document).ready(function(){
         trivia.incorrect++;
         clearInterval(trivia.timerId);
         resultId = setTimeout(trivia.guessResult, 3000);
-        $('#results').html('<h3>You Suck! the right answer is '+ currentAnswer +'</h3>');
+        $('#results').html('<h3>You Suck! the answer is '+ currentAnswer +'</h3>');
         $('#pictures').prepend('<div>' + Object.values(trivia.pictures)[trivia.currentSet] + '</div>');
       }
       
