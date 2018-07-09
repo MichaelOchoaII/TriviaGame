@@ -70,11 +70,12 @@ $(document).ready(function(){
       $('#results').html('');
       
       // show timer
+      $('#timers').text('Time Remaining');
       $('#timer').text(trivia.timer);
       
       // remove start button
       $('#start').hide();
-  
+      
       $('#remaining-time').show();
       
       // ask first question
@@ -86,8 +87,9 @@ $(document).ready(function(){
       
       // set timer to 20 seconds each question
       trivia.timer = 10;
-       $('#timer').removeClass('last-seconds');
+      $('#timer').removeClass('last-seconds');
       $('#timer').text(trivia.timer);
+      
       
       // to prevent timer speed up
       if(!trivia.timerOn){
